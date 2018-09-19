@@ -16,11 +16,28 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestShortable()
+        public void TestShorten()
         {
+            //double z = 4;
+            //double 
             Bruch b = new Bruch(4,2);
             Boolean boo = b.shorten();
             Assert.IsTrue(boo);
+            Assert.AreEqual(2, b.zaehler);
+            Assert.AreEqual(1, b.nenner);
+
+        }
+        [TestMethod]
+        public void TestShortenNegZaehler()
+        {
+            //double z = 4;
+            //double 
+            Bruch b = new Bruch(-4, 2);
+            Boolean boo = b.shorten();
+            Assert.IsTrue(boo);
+            Assert.AreEqual(-2, b.zaehler);
+            Assert.AreEqual(1, b.nenner);
+
         }
     }
 }

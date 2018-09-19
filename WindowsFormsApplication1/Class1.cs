@@ -40,6 +40,7 @@ namespace WindowsFormsApplication1
                     if (tmp == 0){
                         zaehler /= i;
                         nenner /= i;
+                        shorten();
                         return true;
                     }
                 }
