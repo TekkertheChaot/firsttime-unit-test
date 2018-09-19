@@ -1,0 +1,7 @@
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\bin\Debug\WindowsFormsApplication1.exe
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\bin\Debug\WindowsFormsApplication1.pdb
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+\\wfs-vmf1-001\fi7f$\neumannj\visual studio 2013\Projects\WindowsFormsApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
