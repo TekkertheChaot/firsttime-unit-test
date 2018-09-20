@@ -41,6 +41,7 @@
             this.box_zaehler.Name = "box_zaehler";
             this.box_zaehler.Size = new System.Drawing.Size(92, 20);
             this.box_zaehler.TabIndex = 0;
+            this.box_zaehler.TextChanged += new System.EventHandler(this.box_zaehler_TextChanged);
             // 
             // box_nenner
             // 
@@ -48,6 +49,7 @@
             this.box_nenner.Name = "box_nenner";
             this.box_nenner.Size = new System.Drawing.Size(92, 20);
             this.box_nenner.TabIndex = 1;
+            this.box_nenner.TextChanged += new System.EventHandler(this.box_nenner_TextChanged);
             // 
             // box_ergebnis
             // 

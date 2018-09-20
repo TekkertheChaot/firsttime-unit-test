@@ -20,32 +20,34 @@ namespace WindowsFormsApplication1
         public double proceed(){
             if (nenner == 0)
             {
-                return 0;
+                throw new DivideByZeroException("NICHT DURCH NULL TEILEN");
             }
-            else
-            {
-                return zaehler / nenner;
-            }
+            return zaehler / nenner;
         }
 
         public bool shorten()
         {
-            double zs = zaehler, ns = nenner, tmp;
-            for (int i = 2; i <= zaehler && i <= nenner; i++)
+            double zs = zaehler, ns = nenner;
+            for (int i = 2; i <= getNeutralDouble(zaehler) && i <= getNeutralDouble(nenner); i++)
             {
-                tmp = zs % i;
-                if (tmp == 0)
+                if((zs % i)==0 && (ns%i)==0)
                 {
-                    tmp = ns % i;
-                    if (tmp == 0){
-                        zaehler /= i;
-                        nenner /= i;
-                        shorten();
-                        return true;
-                    }
+                    zaehler /= i;
+                    nenner /= i;
+                    shorten();
+                    return true;
                 }
             }
             return false;
+        }
+
+        private double getNeutralDouble(double d) 
+        {
+            if (d < 0)
+            {
+                return d * -1;
+            }
+            else return d;
         }
 
     }
