@@ -20,10 +20,19 @@ namespace WindowsFormsApplication1
 
         private void btn_proceed_Click(object sender, EventArgs e)
         {
-            Bruch b = new Bruch(double.Parse(box_zaehler.Text), double.Parse(box_nenner.Text));
-            box_ergebnis.Text = b.proceed().ToString();
-            box_nenner.Text = b.nenner.ToString();
-            box_zaehler.Text = b.zaehler.ToString();
+            try
+            {
+                Bruch b = new Bruch(double.Parse(box_zaehler.Text), double.Parse(box_nenner.Text));
+                box_ergebnis.Text = b.proceed().ToString();
+                box_nenner.Text = b.nenner.ToString();
+                box_zaehler.Text = b.zaehler.ToString();
+            }
+            catch (DivideByZeroException exc)
+            {
+                BackColor = Color.Red;
+                box_ergebnis.Text = exc.Message;
+            }
+
         }
 
         private void box_zaehler_TextChanged(object sender, EventArgs e)

@@ -17,7 +17,8 @@ namespace WindowsFormsApplication1
             nenner = n;
         }
 
-        public double proceed(){
+        public double proceed()
+        {
             if (nenner == 0)
             {
                 throw new DivideByZeroException("NICHT DURCH NULL TEILEN");
@@ -31,7 +32,7 @@ namespace WindowsFormsApplication1
             double zs = zaehler, ns = nenner;
             for (int i = 2; i <= getNeutralDouble(zaehler) && i <= getNeutralDouble(nenner); i++)
             {
-                if((zs % i)==0 && (ns%i)==0)
+                if ((zs % i) == 0 && (ns % i) == 0)
                 {
                     zaehler /= i;
                     nenner /= i;
@@ -42,7 +43,7 @@ namespace WindowsFormsApplication1
             return false;
         }
 
-        private double getNeutralDouble(double d) 
+        private double getNeutralDouble(double d)
         {
             if (d < 0)
             {
