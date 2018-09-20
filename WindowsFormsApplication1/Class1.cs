@@ -22,6 +22,7 @@ namespace WindowsFormsApplication1
             {
                 throw new DivideByZeroException("NICHT DURCH NULL TEILEN");
             }
+            shorten();
             return zaehler / nenner;
         }
 

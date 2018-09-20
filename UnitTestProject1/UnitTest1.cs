@@ -18,8 +18,6 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestShorten()
         {
-            //double z = 4;
-            //double 
             Bruch b = new Bruch(4,2);
             Boolean boo = b.shorten();
             Assert.IsTrue(boo);
@@ -31,8 +29,7 @@ namespace UnitTestProject1
         public void TestShortenNegZaehler()
         {
             Bruch b = new Bruch(-40, 20);
-            Boolean boo = b.shorten();
-            Assert.IsTrue(boo);
+            b.proceed();
             Assert.AreEqual(-2, b.zaehler);
             Assert.AreEqual(1, b.nenner);
 
